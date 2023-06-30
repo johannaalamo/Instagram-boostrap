@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <!doctype html>
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+        <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">   
+    </head>
+      <body>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid align-items-center">
+              <a class="navbar-brand justify-content-start" href="#">
+                <h1>Instagram <i class="fas fa-camera"></i></h1>
+              </a>
+            <div class="ms-auto">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Create a new post
+                  </button>
+
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+
+
+                              <form>
+                                <div class="mb-3">
+                                  <label for="exampleInputEmail1" class="form-label">Caption:</label>
+                                  <textarea class="form-control" aria-label="With textarea">Add the caption of your post here</textarea>
+                                </div>
+                                <button type="submit" class="btn btn-light border">
+                                    <i class="fas fa-camera" style="color: #000000;"></i>
+                                </button>
+                                <button type="submit" class="btn btn-light border">
+                                    <i class="fas fa-map-marker-alt" style="color: #000000;"></i>
+                                </button>
+                              </form>
+
+
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-success">Publish</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+        <!--Modal end-->   
+                </li>
+              </ul>
+            </div>
+          <div class="justify-content-end">
+              <ul class="navbar-nav">    
+                <li class="nav-item dropdown">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                        <i class="fas fa-cog fa-lg" style="color: #ffffff;"></i>
+                    </button>
+                  <ul class="dropdown-menu  dropdown-menu-end">
+                    <li><a class="dropdown-item"  aria-current="true" href="#">Profile</a></li>
+                    <li><a class="dropdown-item"  aria-current="true" href="#">Accesibility</a></li>
+                    <li><a class="dropdown-item"  aria-current="true" href="#">Privicy and Data</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item text-danger"  aria-current="true" href="#">Log out</a></li>
+                  </ul>
+                </li>
+              </ul>
+          </div>
+          </div>
+        </nav>
+<!-- Nav end --> 
+        <nav class="nav nav-pills justify-content-center">
+
+          <a class="nav-link active m-1 text-decoration-none" href="#Grid" data-bs-toggle="tab">
+            <i class="fas fa-th fa-xl" style="color: #000000;"></i>
+          </a>
+          <a class="nav-link m-1 text-decoration-none" href="#Card" data-bs-toggle="tab">
+            <i class="fas fa-image fa-xl" style="color: #000000;"></i> 
+          </a>
+        </nav>
+
+
+        <div class="tab-content py-5">
+          <div class="tab-pane active" id="Grid">
+
+            <!--empieza feed en rows-->
+              <div class="p-3">
+                <div class="row">
+                  <div class="col-4 p-2">
+                    <div class="ratio ratio-1x1 mw-100 mh-100">
+                      <img class="img-fluid" src="https://picsum.photos/id/231/1000/2000" alt="">
+                    </div>
+                  </div>
+                  <div class="col-4 p-2">
+                    <div class="ratio ratio-1x1 mw-100 mh-100">
+                      <img class="img-fluid" src="https://picsum.photos/id/232/2000" alt="">
+                    </div>
+                  </div>
+                  <div class="col-4 p-2">
+                    <div class="ratio ratio-1x1 mw-100 mh-100">
+                      <img class="img-fluid" src="https://picsum.photos/id/233/2000" alt="">
+                    </div>
+                  </div>
+                  <div class="col-4 p-2">
+                    <div class="ratio ratio-1x1 mw-100 mh-100">
+                      <img class="img-fluid" src="https://picsum.photos/id/234/2000" alt="">
+                    </div>
+                  </div>
+                  <div class="col-4 p-2">
+                    <div class="ratio ratio-1x1 mw-100 mh-100">
+                      <img class="img-fluid" src="https://picsum.photos/id/235/2000" alt="">
+                    </div>
+                  </div>
+                  <div class="col-4 p-2">
+                    <div class="ratio ratio-1x1 mw-100 mh-100">
+                      <img class="img-fluid" src="https://picsum.photos/id/236/1000" alt="">
+                    </div>
+                  </div>
+                  <div class="col-4 p-2">
+                    <div class="ratio ratio-1x1 mw-100 mh-100">
+                      <img class="img-fluid" src="https://picsum.photos/id/237/1000" alt="">
+                    </div>
+                  </div>
+                  <div class="col-4 p-2">
+                    <div class="ratio ratio-1x1 mw-100 mh-100">
+                      <img class="img-fluid" src="https://picsum.photos/id/238/2000" alt="">
+                    </div>
+                  </div>
+                  <div class="col-4 p-2">
+                    <div class="ratio ratio-1x1 mw-100 mh-100">
+                      <img class="img-fluid" src="https://picsum.photos/id/239/2000" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>          
+            </div>
+
+          <div class="tab-pane" id="Card">
+            <div class="container w-50 mx-auto">
+              <div class="card border m-2"> 
+                <div class="card-header bg-transparent d-flex">
+              
+    <!--empieza 1er post-->
+                  <h1 class="fs-3">Foto 1</h1>
+                  <p class="fs-6 ms-auto">30/06</p>
+                </div>
+                <img class="img-fluid w-100 h-100" src="https://picsum.photos/id/231/2000/1500" alt="">
+                <div class="card-footer bg-transparent">
+                  <p class="fw-bold">450 Likes</p>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, esse tempora!</p>
+                </div>
+              </div>
+    <!--termina 1er post-->
+    <!--empieza 2do post-->
+        <div class="card border m-2"> 
+          <div class="card-header bg-transparent d-flex">
+            <h1 class="fs-3">Foto 2</h1>
+            <p class="fs-6 ms-auto">18/09</p>
+          </div>
+          <img class="img-fluid w-100 h-100" src="https://picsum.photos/id/232/2000" alt="">
+          <div class="card-footer bg-transparent">
+            <p class="fw-bold">12 Likes</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, esse tempora!</p>
+          </div>
+        </div>
+        <!--termina 2do post-->
+        <!--empieza 3er post-->
+        <div class="card border m-2"> 
+          <div class="card-header bg-transparent d-flex">
+            <h1 class="fs-3">Foto 3</h1>
+            <p class="fs-6 ms-auto">15/05</p>
+          </div>
+          <img class="img-fluid w-100 h-100" src="https://picsum.photos/id/233/2000" alt="">
+          <div class="card-footer bg-transparent">
+            <p class="fw-bold">22 Likes</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, esse tempora!</p>
+          </div>
+        </div>
+    <!--termina 3er post-->
+    <!--empieza 4to post-->
+        <div class="card border m-2"> 
+          <div class="card-header bg-transparent d-flex"> 
+            <h1 class="fs-3">Foto 4</h1>
+            <p class="fs-6 ms-auto">16/03</p>
+          </div>
+          <img class="img-fluid w-100 h-100" src="https://picsum.photos/id/234/2000" alt="">
+          <div class="card-footer bg-transparent">
+            <p class="fw-bold">300 Likes</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, esse tempora!</p>
+          </div>
+        </div>
+
+    <!--termina 4to post-->
+    <!--empieza 5to post-->
+
+        <div class="card border m-2"> 
+          <div class="card-header bg-transparent d-flex"> 
+            <h1 class="fs-3">Foto 5</h1>
+            <p class="fs-6 ms-auto">07/02</p>
+          </div>
+          <img class="img-fluid w-100 h-100" src="https://picsum.photos/id/235/2000" alt="">
+          <div class="card-footer bg-transparent">
+            <p class="fw-bold">222 Likes</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, esse tempora!</p>
+          </div>
+        </div>
+ 
+    <!--termina 5to post-->
+    <!--empieza 6to post-->
+
+        <div class="card border m-2"> 
+          <div class="card-header bg-transparent d-flex"> 
+            <h1 class="fs-3">Foto 6</h1>
+            <p class="fs-6 ms-auto">03/01</p>
+          </div>
+          <img class="img-fluid w-100 h-100" src="https://picsum.photos/id/236/1000" alt="">
+          <div class="card-footer bg-transparent">
+            <p class="fw-bold">500 Likes</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, esse tempora!</p>
+          </div>
+        </div>
+
+<!--termina 6to post-->
+          </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+      </body>
+</html>
